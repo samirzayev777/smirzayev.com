@@ -1,4 +1,69 @@
 body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    padding-top: 40px;  
+    padding-bottom: 40px;  
+    max-height: 100vh;
+    overflow-y: auto;
+    position: relative;  
+    z-index: 1;  
+  }
+  
+  .image-container {
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .more-info {
+    margin-top: 10px;
+    font-size: 40px;
+    margin-bottom: 40px;  
+  }
+  
+  .more-info a {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .more-info a:hover {
+    background-color: darkgreen;
+  }
+  
+
+/* 
+body {
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -53,3 +118,4 @@ img {
 .more-info a:hover {
   background-color: darkgreen;
 }
+ */
